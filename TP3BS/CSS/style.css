@@ -1,51 +1,45 @@
 body {
-    background-color: darkgray;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: auto;
-    max-width: 1300px;
+    background-color: grey;
+    max-width: 1200px;
 }
 
 .page {
-    margin: auto;
+    background-color: rgb(177, 153, 153);
 }
 
-
-
-.img-catalogue {
-    width: 250px;
-    margin-left: 50px;
-    border-radius: 15px;
-    border-style: double;
-    border-color: black;
-
+.container {
+    padding-top: 10px;
 }
 
-footer {
-    background-color: rgb(160, 122, 196);
-
+.main img{
+    margin-bottom: 50px;
+    padding-bottom: 25px;
+    border-style: dashed;
 }
 
-table>th,
-td {
-    background-color: grey;
-    border: 1px solid black;
+.header-img {
+   
+    background-image: url(TP3BS/IMG/slider-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    aspect-ratio: 16/9;
 }
 
-hr {
-    border-color: aqua;
+.header-img h1 {
+    /* Le texte fera 5% de la largeur de l'écran. Plus l'écran réduit, plus le texte réduit. */
+    font-size: 5vw;
 }
 
-.fa-solid {
-    color: gold;
+.header-img h2 {
+    font-size: 3vw;
 }
 
-.promo-color {
-    color: rgb(204, 31, 31);
-    font-size: 20px;
-    font-weight: 600;
-    text-shadow:
-        -1px -1px 0 rgb(95, 33, 33),
-        1px -1px 0 rgb(95, 33, 33),
-        -1px 1px 0 rgb(95, 33, 33),
-        1px 1px 0 rgb(95, 33, 33);
+.header-img h3 {
+    font-size: 1.5vw;
+}
+
+.carousel-inner {
+    /* On dit au navigateur que sur cette zone, on gère le glissement horizontal nous-mêmes */
+    touch-action: pan-y;
 }
