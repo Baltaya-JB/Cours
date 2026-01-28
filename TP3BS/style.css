@@ -19,7 +19,7 @@ body {
 
 .header-img {
    
-    background-image: url(/workspaces/Cours/TP3BS/IMG/slider-bg.jpg);
+    background-image: url(slider-bg.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
