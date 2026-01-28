@@ -1,0 +1,160 @@
+.inscription {
+    background: rgb(132, 200, 255);
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+fieldset div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="mail"],
+input[type="password"],
+input[list] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #d3edff;
+}
+
+input.name {
+    border: 2px dotted red;
+}
+
+fieldset div:has(input[type="radio"]),
+fieldset div:has(input[type="checkbox"]) {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.button-subscribe {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #3ca1ff;
+    color: white;
+    padding: 12px 30px;
+    border: solid 1px #8aa5ff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.more-connexion {
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    scale: ;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-size: 50px;
+}
+
+.fa-apple {
+    color: aliceblue;
+    text-shadow:
+        /* ajoute une bordure au texte */
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+        transition: transform 0.3s ease;
+        filter: drop-shadow( 0 0 5px white); 
+}
+
+/* On cible précisément l'icône Google de Font Awesome */
+.fa-google {
+    /* 1. On crée un dégradé avec les 4 couleurs officielles de Google */
+    /* On utilise des paliers de 25% pour éviter les mélanges flous */
+    background: linear-gradient(135deg,
+            #4285F4 25%,
+            /* Bleu */
+            #EA4335 25% 50%,
+            /* Rouge */
+            #FBBC05 50% 75%,
+            /* Jaune */
+            #34A853 75%
+            /* Vert */
+        );
+    /* 2. La découpe magique : le fond ne s'affiche QUE sur la forme du texte/icône */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* 3. On rend l'icône elle-même transparente pour voir le fond à travers */
+    color: transparent;
+    /* On ajoute une transition pour le jour où tu voudras l'animer */
+    transition: transform 0.3s ease;
+    filter: drop-shadow( 0 0 5px white); 
+}
+
+.fa-facebook {
+    color: #1877F2; 
+    filter: drop-shadow( 0 0 5px white); 
+    transition: transform 0.3s ease;
+}
+
+/* Twitter (X) - On utilise le noir profond de la nouvelle identité */
+.fa-x-twitter {
+    color: #000000;
+    background: linear-gradient(45deg, 
+        rgb(0, 0, 0) 50%, 
+        #3a3a3a 50%
+    );
+
+    /* On applique la même technique de découpe que pour Google */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    /* On garde ta rotation au hover que tu as déjà */
+    display: inline-block;
+    transition: transform 0.3s ease;
+    filter: drop-shadow( 0 0 5px white); 
+}
+
+/* Petit effet sympa au survol pour montrer que c'est cliquable */
+.fa-apple:hover,
+.fa-google:hover,
+.fa-facebook:hover,
+.fa-x-twitter:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+

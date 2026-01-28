@@ -1,0 +1,42 @@
+
+
+body {
+ 
+  max-width: 1080px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(50 50 50);
+  color: white
+}
+
+.Page {
+  background-color: black;
+}
+
+.Nom {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+main {
+  height: 900px;
+}
+
+.rounded{
+  border-radius: 50%;
+}
+
+.nameheader{
+  background-color:rgb(50 50 50);
+  margin-left: 20px;
+  margin-right: 10px;
+  background-size: 30%;
+  border-radius:30px;
+}
+
+.exp{
+  background-color:rgb(50 50 50);
+  margin-left: 10px;
+  background-size: 30%;
+  border-radius:30px;
+}

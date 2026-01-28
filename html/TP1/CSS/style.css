@@ -1,0 +1,51 @@
+body {
+    background-color: darkgray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto;
+    max-width: 1300px;
+}
+
+.page {
+    margin: auto;
+}
+
+
+
+.img-catalogue {
+    width: 250px;
+    margin-left: 50px;
+    border-radius: 15px;
+    border-style: double;
+    border-color: black;
+
+}
+
+footer {
+    background-color: rgb(160, 122, 196);
+
+}
+
+table>th,
+td {
+    background-color: grey;
+    border: 1px solid black;
+}
+
+hr {
+    border-color: aqua;
+}
+
+.fa-solid {
+    color: gold;
+}
+
+.promo-color {
+    color: rgb(204, 31, 31);
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow:
+        -1px -1px 0 rgb(95, 33, 33),
+        1px -1px 0 rgb(95, 33, 33),
+        -1px 1px 0 rgb(95, 33, 33),
+        1px 1px 0 rgb(95, 33, 33);
+}

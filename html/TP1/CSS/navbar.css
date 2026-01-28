@@ -1,0 +1,108 @@
+nav {
+    display: flex;
+    /* background-color: rgb(35, 189, 94); */
+    justify-content: start;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  
+}
+
+ul {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.logo {
+    border: 2px solid red;
+    flex-wrap: wrap;
+}
+
+img {
+    display: flex;
+    border-radius: 10px;
+}
+
+.menu {
+    /* border: 2px solid red; */
+    display: flex;
+    background-color: rgb(144, 197, 243);
+    border-radius: 10px;
+    max-height: 40px;   
+}
+
+.menu>li {
+    padding-left: 75px;
+    margin: auto;
+}
+
+.extra {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    justify-content: space-between;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+.extra>li a{
+    text-decoration: none;
+}
+
+nav>ul>li>a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: x-large;
+    text-transform: uppercase;
+    display: inline-block;
+    /* Supprime la redondance */
+
+    transition: 0.3s;
+    /* smooth le changement de couleur blanc > orange */
+    text-shadow:
+        /* ajoute une bordure au texte */
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    position: relative;
+    /* ajoute la barre sous les mots de la navbar */
+    vertical-align: bottom;
+}
+
+nav>ul>li>a:hover, 
+nav>ul>li>a[aria-current="page"] {
+    color: orange;
+}
+
+nav>ul>li>a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    /* Au début, la barre fait 0 pixel de large */
+    height: 3px;
+    background-color: #ff9d00;
+    transition: width 0.3s;
+    /* La barre va s'allonger en 0.3s */
+}
+
+nav>ul>li>a:hover::after {
+    width: 100%;
+    /* Quand on survole, elle prend toute la largeur */
+}
+
+nav>ul>li>a:active {
+    transform: scale(0.95);
+    /* Le bouton rétrécit un tout petit peu, comme si on l'enfonçait */
+}
+
+.logo{
+
+transition: 0.3s;
+}
+.logo:active{
+    transform: scale(0.95);
+}

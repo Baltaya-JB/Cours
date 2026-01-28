@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+
+
+
+    <section class="inscription">
+
+        <h1>Inscription</h1>
+        <form action="">
+            <fieldset>
+                <legend>Information personnels</legend>
+                <div class="centrediv">
+                    <label for="name">*Nom :</label>
+                    <input class="name" type="text" name="nom" id="nom" placeholder="Votre nom" required>
+                </div>
+                <div>
+                    <label for="mail">*Email :</label>
+                    <input type="mail" name="mail" id="mail" placeholder="exemple@gmail.com" required>
+                </div>
+                <div>
+                    <label for="mdp">*Mot de passe :</label>
+                    <input type="password" name="mdp" id="mdp" placeholder=" Votre mot de passe" required>
+                </div>
+            </fieldset>
+        </form>
+
+        <form action="">
+            <fieldset>
+                <legend>Information supplementaire</legend>
+                <div>
+                    <label for="sexe">Sexe :</label>
+                    <label>Femme</label>
+                    <input type="radio" name="sexe" id="femme" value="femme">
+                    <label>Homme</label>
+                    <input type="radio" name="sexe" id="homme" value="homme">
+                </div>
+                <div>
+                    <label for="sexe">Sexe :</label>
+                    <label>Vetements</label>
+                    <input type="checkbox" name="Vetements" id="Vetements" value="Vetements">
+                    <label>Acessoires</label>
+                    <input type="checkbox" name="Acessoires" id="Acessoires" value="Acessoires">
+                </div>
+                <div>
+                    <label for="pays">Pays :</label><br>
+                    <input list="pays" name="pays" required>
+                    <datalist id="pays">
+                        <option value="France">
+                        <option value="Tunisie">
+                        <option value="Royaume-Unis">
+                        <option value="Espagne">
+                        <option value="Allemagne">
+                        <option value="Suisse">
+                    </datalist>
+                </div>
+            </fieldset>
+        </form>
+        <div class="button-subscribe"><button type="submit">S'inscrire</button></div>
+
+    </section>
+
+
+
+
+
+</body>
+
+</html>
